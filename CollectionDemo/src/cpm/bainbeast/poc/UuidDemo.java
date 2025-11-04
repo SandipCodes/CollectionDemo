@@ -33,6 +33,11 @@ public class UuidDemo {
         else {
         	System.out.println("Both arenot equal: "+ uuid +"  "+ uuidSecond );
         }
+        
+     // 2. Create a UUID from a string representation
+        String uuidString = "e58ed763-928c-4155-bee9-fdbaaadc15f3";
+        UUID fromStringUuid = UUID.fromString(uuidString);
+        System.out.println("UUID from String: " + fromStringUuid);
 	}//main()
 
 }//class
