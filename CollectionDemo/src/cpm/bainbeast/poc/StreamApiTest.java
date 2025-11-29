@@ -2,6 +2,8 @@ package cpm.bainbeast.poc;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class StreamApiTest {
 
@@ -41,6 +43,13 @@ public class StreamApiTest {
 		        .distinct()
 		        .forEach(System.out :: println);
 		System.out.println("-----------------------------");
+
+	
+		List<String> names2= names.stream()
+				                  .map(String :: toUpperCase)
+				                  .collect(Collectors.toList());
+		
+		System.out.println(names2);
 	}//main()
 
 }//class
