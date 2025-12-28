@@ -31,9 +31,29 @@ public class OddEvenTest {
 		num=sc.nextInt();
 		checkNum4(num);
 		System.out.println();
+		
+		System.out.println("Enter the number:");
+		num=sc.nextInt();
+		checkNum5(num);
+		System.out.println();
 
 	}
     
+	//checking LSB(least significant bit) 0-even, 1- odd
+	private static void checkNum5(int num) {
+		
+		if(num !=0) {
+			
+			if(Integer.toBinaryString(num).endsWith("0")) {
+				System.out.println("Even Number");
+			}
+			else {
+				System.out.println("Odd number");
+			}
+		}
+		
+	}
+
 	//Using Bitwise XOR
 	private static void checkNum4(int num) {
 		
