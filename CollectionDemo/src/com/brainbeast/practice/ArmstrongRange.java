@@ -6,7 +6,7 @@ public class ArmstrongRange {
 	public static void main(String[] args) {
 		
 		int num1=50;
-		int num2=500;
+		int num2=161500;
 		
 		findArmstring(num1,num2);
 
