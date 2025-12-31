@@ -1,5 +1,8 @@
 package com.brainbeast.practice;
 
+import java.time.Year;
+import java.util.Scanner;
+
 public class LeapYear {
 
 	private static void isLeapyear(int year) {
@@ -7,12 +10,12 @@ public class LeapYear {
 		boolean is_leap_year=false;
 		
 		
-		if(year/4 ==0) {
+		if(year % 4 ==0) {
 			is_leap_year=true;
 			
-			if(year/100 ==0) {
+			if(year % 100 ==0) {
 				
-				if(year/400 ==0) { 
+				if(year % 400 ==0) { 
 					is_leap_year=true;
 				}
 				else {
@@ -32,7 +35,17 @@ public class LeapYear {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		isLeapyear(2000);
+		Scanner sc=new Scanner(System.in);
+		
+		int year=0;
+		
+		do{
+		    
+			System.out.println("Enter the Year: ");
+			 year=sc.nextInt();
+			isLeapyear(year);
+		}while(year !=0);
+		// System.out.println(Year.isLeap(1900));
 	}
 
 }
