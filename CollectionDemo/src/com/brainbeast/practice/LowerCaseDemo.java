@@ -14,6 +14,7 @@ public class LowerCaseDemo {
 		String lowerCaseStr = str.toLowerCase();
 		System.out.println("Lower case string: " + lowerCaseStr);
 		sc.close();
+		system.out.println("Program executed successfully.");
 	}
 
 }
